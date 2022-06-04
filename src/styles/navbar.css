@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+header{
+    margin: 0 auto;
+    display:  flex;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.021);
+    position: fixed;
+    top: 0;
+}
+.contnavbar{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 0.5%;
+    height: 30%;
+}
+.marketotologo{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 0;
+}
+
+
+
+.search{
+    border: 1px solid rgb(152, 152, 152);
+    border-radius: 11px;
+    height: 40px;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 2px;
+    display: flex;
+}
+
+.searchtxt{
+    width: 130%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    height: 40px;
+}
+
+/* .searchlogo{
+    margin-top: 6px;
+    border: none;
+    background: none;
+    margin-right: 0;
+    margin-left: 90%;
+} */
+
+.searchlogo{
+    margin-top: 8px;
+    border: none;
+    background: none;
+    margin-right: 2px;
+    width: 27px;
+    font-size: 20px;
+    margin-left: 27%;
+}
+
+
+
+.contbut{
+    display: flex;
+    margin-left: 10%;
+    width: 30%;
+    margin-bottom: 5px;
+}
+button{
+    /* background-color: #EEECF9;
+    border: 2px solid black;
+    border-radius: 9px;
+    height: 90%;
+    width: 10%;
+    margin-top:1px ;
+    margin-left: 7px;
+    font-family: 'Roboto', sans-serif; */
+}
+button img{
+    /* width: 110%;
+    margin-left: -1px;
+    margin-top: 1px; */
+}
+
+.imgsrc{
+    margin-top: -2px;
+}
+
+p{
+    margin-left: 20px;
+}
+
+.su{
+    margin-left: 30px;
+}
+.buttonnav{
+    width: 3.5%;
+    margin-top: -1px;
+    margin-left: 15px;
+    position: absolute;
+}
+.iclog{
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+
+.buttonnavv{
+    width: 20px;
+    font-size: 33px;
+    margin-left: 15px;
+    color: #959596;
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+}
+
+.cart-indicator{
+    background-color: #A297DC;
+    border-radius: 15%;
+    width: 25px;
+    text-align: center;
+    position: absolute;
+    margin-left: 35px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    
+}
+
+
+.pers{
+    font-size: 35px;
+    color: #959596;
+    margin-top: 3px;
+    
+}
+
+.cartic{
+    font-size: 35px;
+    margin-top: 3px;
+    margin-left: 15px;
+    color: #959596;
+}
+
+.su{
+    text-decoration: none;
+    color: #959596;
+    margin-top: -2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.su:hover{
+    color: #7a7a7a;
+}
+
+.su:active{
+    color: #7a7a7a;
+}
+
+.searchBack{
+    background: rgb(255, 255, 255);
+    position: absolute;
+    width: 19.85%;
+    margin-top: -5px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.319);
+    border-left: 1px solid rgb(152, 152, 152) ;
+    border-right: 1px solid rgb(152, 152, 152) ;
+    border-bottom: 1px solid rgb(152, 152, 152) ;
+    margin-left: -1px;
+}
+
+.searchone{
+    margin: 10px;
+    z-index: 1;
+
+}
+
+.srchn{
+    z-index: 1;
+    
+}
+.srchn:hover{
+    background: #f1f1f1;
+}
+
+.contnavbar{
+    z-index: 1;
+    
+}
+
+.searchBack{
+    z-index: 1;
+    position: absolute;
+}
+
+.rast{
+    width: 20px;
+}
