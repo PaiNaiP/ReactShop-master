@@ -70,7 +70,7 @@ export const UpdateProduct = () => {
 
   const handleProductImg = async(e)=>{
     const selectedFile = e.target.files[0];
-    if(selectedFile!=null){
+    if(selectedFile!==null){
    // setImage(selectedFile)
     const images = ref(storage, `/files/${selectedFile.name}`);
     const uploadTask = uploadBytesResumable(images, selectedFile)

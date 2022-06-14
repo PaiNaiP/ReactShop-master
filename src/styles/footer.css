@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
 .contfoter{
     width: 100%;
     height: 120px;
@@ -21,7 +23,7 @@
 .vkbut{
     background: transparent;
     border: none;
-    width: 60px;
+    width: 70px;
     margin-top: -5px;
 }
 
@@ -47,4 +49,15 @@
 
 .quefot{
     margin-top: 15px;
+}
+.ic{
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+}
+
+.icgit{
+    width: 70px;
+    text-decoration: none;
+    color: black;
 }

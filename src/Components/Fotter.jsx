@@ -4,6 +4,7 @@ import vk from '../img/VK Circled.svg'
 import gmail from '../img/gmail.svg'
 import logomarkt from '../img/martk.svg'
 import { Link, Route } from 'react-router-dom'
+import {AiFillGithub} from 'react-icons/ai'
 
 export const Fotter = () => {
   return (
@@ -15,8 +16,8 @@ export const Fotter = () => {
         </div>
         <div className="rightfot">
             <div className="buttt">
-              <a href="https://vk.com/painaipmustdie">
-                <button className='vkbut'><img src={vk} alt="" /></button>
+              <a href="https://github.com/PaiNaiP" className='icgit'>
+                <AiFillGithub className='ic'/>
                 </a>
                 <a href='mailto:isip_e.i.batygina@mpt.ru'>
                 <button className='gmailbut'><img src={gmail} alt="" /></button>
