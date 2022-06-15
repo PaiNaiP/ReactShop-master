@@ -1,4 +1,13 @@
 Example https://marketotoreact.web.app/
+## Add to .env.local
+
+### `REACT_APP_FIREBASE_API_KEY = AIzaSyCXclY_BtN9RjInys6W1Ew_ds-Y7E1SzCE`
+### `REACT_APP_FIREBASE_AUTH_DOMAIN = marketotoreact.firebaseapp.com`
+### `REACT_APP_FIREBASE_PROJECT_ID = marketotoreact`
+### `REACT_APP_FIREBASE_STORAGE_BUCKET = marketotoreact.appspot.com`
+### `REACT_APP_FIREBASE_MESSAGING_SENDER_ID = 266671387713`
+### `REACT_APP_FIREBASE_APP_ID = 1:266671387713:web:a53b749d62a89d716002c0`
+### `REACT_APP_FIREBASE_MEASUREMENT_ID = G-HKDCY8GG9N`
 
 # Getting Started with Create React App
 
