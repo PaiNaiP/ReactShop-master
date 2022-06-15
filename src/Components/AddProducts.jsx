@@ -101,6 +101,7 @@ const nn = async(q,b)=>{
          })
         }else{
           alert('Товар с таким именем уже есть!')
+          navigate('/')
         }
       }
         else{
