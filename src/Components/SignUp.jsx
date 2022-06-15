@@ -28,6 +28,7 @@ export const SignUp = () => {
 
   const handleSignUp=(e)=>{
     e.preventDefault();
+    if(Name!==''){
     createUserWithEmailAndPassword(auth, Email, Password)
     .then(credentials=>{
       console.log(credentials)
@@ -46,6 +47,9 @@ export const SignUp = () => {
     .catch((error)=>{
       setErrorMsg(error.message)
     })
+  }else{
+    setErrorMsg('Fill in all the fields')
+  }
   }
   return (
 

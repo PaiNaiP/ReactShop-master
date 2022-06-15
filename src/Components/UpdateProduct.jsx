@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
-import { collection, where, onSnapshot, doc, updateDoc } from 'firebase/firestore';
+import { collection, where, onSnapshot, doc, updateDoc, getDocs } from 'firebase/firestore';
 import { query, deleteDoc } from 'firebase/firestore';
 import { db } from '../config/config';
 import '../styles/Update.css'
@@ -39,14 +39,26 @@ export const UpdateProduct = () => {
 
 
   const handletoSave = async() =>{
+    
     const tit = document.getElementById('title')
     const des = document.getElementById('description')
     const pr = document.getElementById('price')
     const washingtonRef = doc(db, "products", jd);
+    let a = 'true'
+    const q = query(collection(db, "products"), where("title", "==", tit.value));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+      a = 'false'
+    });
     if(tit.value!=''){
-      await updateDoc(washingtonRef, {
-      title:tit.value
-      });
+      if(a==='true'){
+        await updateDoc(washingtonRef, {
+        title:tit.value
+        });
+      }
+      else{
+        alert('Такое название уже есть')
+      }
     }
     if(des.value!=''){
       await updateDoc(washingtonRef, {

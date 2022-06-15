@@ -15,7 +15,7 @@ export const ResetPassword = () => {
         const email = document.getElementById('email')
         const pass1 = document.getElementById('pass1')
         const pass2 = document.getElementById('pass2')
-        
+        if(email.value!==''){
         if(pass1.value==pass2.value){
             try {
                 const q = query(collection(db, "users"), where("Email", "==", email.value))
@@ -42,6 +42,9 @@ export const ResetPassword = () => {
         else{
             setErrorMsg('Пароли не совпадают');
         }
+    } else{
+        setErrorMsg('Почта не найдена');
+    }
     }
     
   return (

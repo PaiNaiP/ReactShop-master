@@ -12,6 +12,7 @@ import { NotFound } from './NotFound'
 import { useNavigate } from 'react-router-dom'
 
 export const AddProducts = () => {
+  const [povtor, setPovtor] = useState([])
   let navigate = useNavigate();
     const [currentUse, setCurrentUse] = useState([])
     function GetCurrentUser(){
@@ -47,6 +48,7 @@ export const AddProducts = () => {
     const [successMsg, setSuccessMsg]=useState('')
     const [uploadError, setUploadError] = useState('');
 
+
     const [progress, setProgress]=useState(0 )
 const nn = async(q,b)=>{
     
@@ -54,8 +56,16 @@ const nn = async(q,b)=>{
 } 
 
     const types = ['image/jpg', 'image/jpeg', 'image/png', 'image/PNG']
-    const handleProductImg=(e)=>{
+
+    const handleProductImg=async(e)=>{
+      let a = 'true'
+      const q = query(collection(db, "products"), where("title", "==", title));
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {
+          a = 'false'
+        });
       if(title!==''&&description!==''&&price!==''){
+        if(a==='true'){
         const selectedFile = e.target.files[0];
         setImage(selectedFile)
         const images = ref(storage, `/files/${selectedFile.name}`);
@@ -89,7 +99,10 @@ const nn = async(q,b)=>{
 //   });
 
          })
+        }else{
+          alert('Товар с таким именем уже есть!')
         }
+      }
         else{
           alert('Заполните все поля!')
         }
